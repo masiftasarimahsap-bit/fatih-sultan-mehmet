@@ -77,6 +77,16 @@ body {
   transition: color 0.3s;
 }
 .nav-links a:hover { color: var(--gold); }
+.lang-switch {
+  border: 1px solid rgba(201, 168, 76, 0.4) !important;
+  padding: 0.25rem 0.7rem !important;
+  color: var(--gold) !important;
+  letter-spacing: 0.15em !important;
+}
+.lang-switch:hover {
+  background: var(--gold);
+  color: var(--dark) !important;
+}
 
 /* ===== HERO ===== */
 #hero {
