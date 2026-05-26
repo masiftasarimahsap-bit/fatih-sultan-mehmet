@@ -673,11 +673,57 @@ footer {
   .bio-grid { grid-template-columns: 1fr; }
   .bio-portrait { position: static; }
 }
+
 @media (max-width: 768px) {
+  /* Nav */
   .nav-links { display: none; }
-  .conquest-content { grid-template-columns: 1fr; }
-  .legacy-grid { grid-template-columns: 1fr; }
+  #navbar { padding: 1rem; }
+
+  /* Sections */
+  section { padding: 5rem 0; }
+  .container { padding: 0 1.2rem; }
+
+  /* Hero */
+  .hero-content { padding: 1.2rem; }
+  .hero-title { font-size: clamp(2.8rem, 14vw, 5rem); }
+  .hero-sub { font-size: 1rem; }
+
+  /* Section headers */
+  .section-header { margin-bottom: 3rem; }
+  .section-header h2 { font-size: clamp(1.6rem, 7vw, 2.5rem); }
+
+  /* Biography */
+  .bio-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .bio-portrait { position: static; }
+  .portrait-frame { max-width: 300px; margin: 0 auto 2rem; }
+  .bio-stats { justify-content: space-around; }
+
+  /* Timeline */
+  .timeline { padding-left: 2rem; }
+  .tl-item { gap: 1rem; }
+  .tl-year { min-width: 46px; font-size: 0.7rem; }
+
+  /* Conquest */
+  #conquest { padding: 6rem 0; }
+  .conquest-content { grid-template-columns: 1fr; gap: 1rem; }
+  .conquest-card { padding: 2rem 1.5rem; }
+
+  /* Campaigns */
   .campaigns-grid { grid-template-columns: 1fr; }
-  .campaign-item:nth-child(even) { border-right: 1px solid rgba(201,168,76,0.1); }
-  .empire-stat { flex-wrap: wrap; gap: 1rem; }
+  .campaign-item { border-right: none !important; }
+  .campaign-item:nth-last-child(-n+2) { border-bottom: 1px solid rgba(201,168,76,0.1); }
+  .campaign-item:last-child { border-bottom: none; }
+  .empire-stat { flex-direction: column; gap: 1rem; padding: 2rem 1.2rem; text-align: center; }
+  .empire-num { font-size: 1.3rem; }
+
+  /* Legacy */
+  .legacy-grid { grid-template-columns: 1fr; }
+  .legacy-card { padding: 2rem 1.5rem; }
+
+  /* Quotes */
+  #quotes { padding: 6rem 0; }
+  blockquote { font-size: 1.2rem; padding: 0 0.5rem; }
+
+  /* Footer */
+  footer { padding: 3rem 1.5rem; }
 }
